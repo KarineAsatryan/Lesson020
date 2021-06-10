@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(to left, grey, black, grey);
+    /*background-color: black;*/
+}
+nav {
+    display:  flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color:  white;
+    font-size:  1.5em;
+    border:  1px solid green;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+nav ul li a:hover {
+    color:  green;
+}
+
+#home {
+    color:  orange;
+    font-style: normal;
+}
+
+#themes {
+    /*border:  1px solid black;*/
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.theme {
+    display: flex;
+    /*border: 1px solid orange;*/
+    height:  30%;
+}
+
+.theme div {
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    /*border: 1px solid red;*/
+    position:relative;
+    /*border-radius: 15px;*/
+}
+#themesB {
+    font-style: italic;
+}
+#themesB:hover {
+    color: green;
+    cursor: pointer;
+}
+img {
+    transition: transform 0.3s;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    margin: auto;
+    vertical-align: middle;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 15px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+footer {
+    /*border: 1px solid red;*/
+    margin-top: 5vh;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 100;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    margin-top: 10px;
+    display:block;
+}
